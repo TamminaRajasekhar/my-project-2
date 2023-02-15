@@ -33,7 +33,7 @@ jobs:
       with:
         image: rajasekhartammina/github
         registry: docker.io
-        dockerfile: ./Dockerfile
+        dockerfile: Dockerfile
         username: ${{ secrets.actions.DOCKER_USERNAME }}
         password: ${{ secrets.actions.DOCKER_TOKEN }}
           
