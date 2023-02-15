@@ -33,7 +33,7 @@ jobs:
       with:
         image: rajasekhartammina/github
         tags: v1, latest
-        registry: registry-url.io
+        registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_TOKEN }}
           
