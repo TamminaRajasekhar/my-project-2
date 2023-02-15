@@ -27,5 +27,13 @@ jobs:
 
     - name: Build with Gradles
       run: ./gradlew build
+      
+    - name: build and push
+      uses: docker/build-push-action@v4
+      with:
+          image: rajasekhartammina/dtp03-httpd
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+    
 
          
